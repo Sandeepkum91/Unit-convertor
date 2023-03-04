@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit convertor</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="main-box">
+            <div class="box1">
+                <h1>UNIT CONVERTOR</h1>
+                <div class="box2">
+                    <select name="category" id="category" class="input-cat">
+                        <option value="">--select category--</option>
+                        <option value="length">Length</option>
+                        <option value="weight">Weight</option>
+                        <option value="temp">Temp</option>
+                        <!-- <option value="category">4-</option> -->
+
+
+                    </select>
+                </div>
+                <div class="box3">
+                    <div class="fristinput">
+                        <input type="number" name="number" id="from-value">
+                        <br>
+                        <select name="" id="from-unit" class="input-select">
+                            <option value="">--select--</option>
+                           
+                        </select>
+                    </div>
+                    <p>=</p>
+
+                    <div class="secondinput">
+                        <input type="number" name="number" id="to-value" disabled>
+                        <br>
+                        <select name="" id="to-unit" class="input-select">
+                            <option value="">--select--</option>
+                           
+                        </select>
+                    </div>
+                </div>
+                <div class="box4">
+                    <button type="button" onclick="convertor()">Convert</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
